@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://cards/card.tscn" type="PackedScene" id=1]
+[ext_resource path="res://asset/cards/suit/spade.png" type="Texture" id=3]
+
+[node name="Spade" instance=ExtResource( 1 )]
+suit = "spade"
+
+[node name="SuitBig" parent="." index="0"]
+texture = ExtResource( 3 )
+
+[node name="SuitSmall" parent="." index="1"]
+texture = ExtResource( 3 )

@@ -1,1 +1,3 @@
-# poker.gd
+# poker
+
+godot hold'em

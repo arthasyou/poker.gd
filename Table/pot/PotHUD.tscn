@@ -1,0 +1,52 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Table/HUD_font.tres" type="DynamicFont" id=1]
+[ext_resource path="res://table/pot/PotHUD.gd" type="Script" id=2]
+
+[node name="PotHUD" type="Control"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -200.0
+margin_top = -170.0
+margin_right = 200.0
+margin_bottom = -130.0
+mouse_filter = 2
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TotalPot" type="HBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="Label" parent="TotalPot"]
+margin_left = 20.0
+margin_top = 5.0
+margin_right = 163.0
+margin_bottom = 35.0
+custom_fonts/font = ExtResource( 1 )
+text = "Total Pot: "
+
+[node name="Symbol" type="Label" parent="TotalPot"]
+margin_left = 167.0
+margin_top = 5.0
+margin_right = 180.0
+margin_bottom = 35.0
+custom_fonts/font = ExtResource( 1 )
+text = "$"
+
+[node name="Chips" type="Label" parent="TotalPot"]
+margin_left = 184.0
+margin_top = 5.0
+margin_right = 379.0
+margin_bottom = 35.0
+custom_fonts/font = ExtResource( 1 )
+text = "###,###,###,###"

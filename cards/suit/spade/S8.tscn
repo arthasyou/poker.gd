@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://cards/suit/Spade.tscn" type="PackedScene" id=1]
+[ext_resource path="res://asset/cards/black/black_8.png" type="Texture" id=2]
+
+[node name="S8" instance=ExtResource( 1 )]
+point = 8
+
+[node name="Text" parent="." index="2"]
+texture = ExtResource( 2 )

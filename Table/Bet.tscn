@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://table/HUD_font.tres" type="DynamicFont" id=1]
+[ext_resource path="res://table/Bet.gd" type="Script" id=2]
+
+[node name="Bet" type="Position2D"]
+position = Vector2( 960, 700 )
+script = ExtResource( 2 )
+
+[node name="C" type="CenterContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -100.0
+margin_right = 50.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 200, 30 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Chips" type="Label" parent="C"]
+margin_right = 200.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 200, 30 )
+size_flags_horizontal = 5
+custom_fonts/font = ExtResource( 1 )
+text = "###,###,###,###"
+align = 1
+valign = 1

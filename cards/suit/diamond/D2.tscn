@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://cards/suit/Diamond.tscn" type="PackedScene" id=1]
+[ext_resource path="res://asset/cards/red/red_2.png" type="Texture" id=2]
+
+[node name="D2" instance=ExtResource( 1 )]
+point = 2
+
+[node name="Text" parent="." index="2"]
+texture = ExtResource( 2 )

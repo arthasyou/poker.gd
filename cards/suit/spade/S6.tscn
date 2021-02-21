@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://cards/suit/Spade.tscn" type="PackedScene" id=1]
+
+[sub_resource type="StreamTexture" id=1]
+flags = 4
+load_path = "res://.import/black_6.png-7ac77578ddc8da44153222ad96247993.stex"
+
+[node name="S6" instance=ExtResource( 1 )]
+point = 6
+
+[node name="Text" parent="." index="2"]
+texture = SubResource( 1 )
